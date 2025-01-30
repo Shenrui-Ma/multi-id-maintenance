@@ -8,10 +8,10 @@ export XFL_CONFIG=./train/config/subject_512.yaml
 
 # 禁用 wandb
 export WANDB_DISABLED=true
+# export WANDB_API_KEY=''
 
 echo $XFL_CONFIG
-# export TOKENIZERS_PARALLELISM=true
-export WANDB_API_KEY='f36a83016bad9c799662f025290cd74ca3b3fb31'
+export TOKENIZERS_PARALLELISM=true
 
 # 使用修改后的本地训练脚本
 accelerate launch --main_process_port 41353 \
